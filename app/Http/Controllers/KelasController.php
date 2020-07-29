@@ -33,10 +33,10 @@ class KelasController extends Controller
         ]);
 
         if($simpan) {
-            return Response()->json(['status'=>1]);
+            return Response()->json(['status'=>'berhasil']);
         }
         else {
-            return Response()->json(['status'=>0]);
+            return Response()->json(['status'=>'gagal']);
         }
     }
 }
